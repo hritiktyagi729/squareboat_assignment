@@ -117,8 +117,8 @@ def post_job(job: JobPostRequest, db: Session = Depends(get_db), token: str = De
 def send_email(to_email: str, subject: str, body: str):
     try:
         with SMTP("smtp.example.com") as smtp:
-            smtp.login("hritiktyagi729@gmail.com", "TyagiHrit@123")
-            smtp.sendmail("hritiktyagi729@gmail.com", to_email, f"Subject: {subject}\n\n{body}")
+            smtp.login("xyz@gmail.com", "pass@123")
+            smtp.sendmail("xyz@gmail.com", to_email, f"Subject: {subject}\n\n{body}")
     except Exception as e:
         print(f"Error sending email: {e}")
 
