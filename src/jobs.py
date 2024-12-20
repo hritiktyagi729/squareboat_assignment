@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base, relationship, Session
 from typing import List
 from smtplib import SMTP
 
-# Database Configuration
+# Database Configuration (To be configure for mysql)
 DATABASE_URL = "mysql+mysqlconnector://root:ritik@localhost/job_api"
 Base = declarative_base()
 engine = create_engine(DATABASE_URL)
